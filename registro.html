@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/general.css">
+    <style>
+     input[type="button"] {
+        margin: auto;
+        margin-top: 1vh;
+      }
+/*       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1174%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(213%2c 206%2c 206%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c31 C 192%2c127.4 576%2c476.4 960%2c513 C 1344%2c549.6 1728%2c273.8 1920%2c214L1920 1080L0 1080z' fill='rgba(94%2c 114%2c 50%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c711 C 192%2c755 576%2c938.2 960%2c931 C 1344%2c923.8 1728%2c726.2 1920%2c675L1920 1080L0 1080z' fill='rgba(62%2c 68%2c 43%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1174'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+*/      
+    </style>
+  </head>
+  <body>
+    <header id="app-header"></header>
+    <nav id="navSinSesion">
+      <a href="inicioSesion.html" id="backToIni">Iniciar Sesión</a>
+      <a href="registro.html" id="backToRegistro">Registrarse</a>
+    </nav>
+    <div id="botones">
+      <form>
+        <legend>Seleccione <br />su rol</legend>
+        <select name="rol" id="rol">
+          <option value="Profesor">Profesor</option>
+          <option value="Alumno" selected>Alumno</option>
+        </select>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Contraseña"
+        />
+        <input type="button" value="Registrarse" id="iniSesion" />
+      </form>
+    </div>
+  </body>
+  <script src="header.js"></script>
+</html>

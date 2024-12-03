@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <style>
+      input[type="button"] {
+        margin: auto;
+        margin-top: 1vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="app-header"></header>
+    <nav id="navSinSesion">
+      <a href="inicioSesion.html" id="backToIni">Iniciar Sesión</a>
+      <a href="registro.html" id="backToRegistro">Registrarse</a>
+    </nav>
+    <div id="botones">
+      <form>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Contraseña"
+        />
+        <input type="button" value="Iniciar Sesion" id="iniSesion" />
+      </form>
+    </div>
+  </body>
+  <script src="header.js"></script>
+</html>

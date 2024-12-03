@@ -1,0 +1,32 @@
+usuario:
+-nombre
+-contraseña
+-rol
+-validado
+
+Pregunta:
+-texto
+-categoria
+-dificultad
+-respuestas
+-respuestaCorrecta
+
+Categoria:
+-nombre
+
+Examen:
+-Fecha
+-nombre
+-listaPreguntas
+
+Intento:
+-examen
+-usuario
+-respuestas
+-nota
+
+
+
+#D5CECE
+rgba(62, 68, 43, 1)
+rgba(94, 114, 50, 1)
