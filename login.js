@@ -19,42 +19,51 @@ function comprobarUsuario(usuario, password) {
 let usuarios = [{ nombre: "admin", password: "admin", rol: "Administrador" }];
 
 function registrar(usuario, password) {
+  // Verificar si el usuario ya está registrado
   if (comprobarUsuario(usuario)) {
     console.log("El usuario ya está registrado.");
-    // TODO: Crear en el dom un area para los mensajes de errores
+    // TODO:  mostrar mensaje de error en el DOM en caso necesario
     return;
   } else {
     console.log("Usuario Válido");
-    
-  }
-  let selecRol = document.getElementById()
 
+    // Validar la contraseña
+    let validacion = validarContraseña(password);
+    if (validacion !== "Contraseña válida.") {
+      console.log(validacion);
+      return;
+    }
+  }
+
+  // Si todo está bien, agregar el nuevo usuario
   usuarios.push({ nombre: usuario, password: password, rol: "Usuario" });
   console.log("Usuario registrado exitosamente.");
 }
 
 function comprobarUsuario(usuario) {
+  // Verifica si el usuario ya está registrado
   return usuarios.some((u) => u.nombre === usuario);
 }
-function validarContraseña(password) {
+
+function validarContraseña(cont) {
   const longitudValida = /^.{8,}$/;
   const tieneMayuscula = /[A-Z]/;
   const tieneNumero = /[0-9]/;
   const tieneCaracterEspecial = /[!@#$%^&*(),.?":{}|<>]/;
 
-  if (!longitudValida.test(password)) {
+  if (!longitudValida.test(cont)) {
     return "La contraseña debe tener al menos 8 caracteres.";
   }
 
-  if (!tieneMayuscula.test(password)) {
+  if (!tieneMayuscula.test(cont)) {
     return "La contraseña debe contener al menos una letra mayúscula.";
   }
 
-  if (!tieneNumero.test(password)) {
+  if (!tieneNumero.test(cont)) {
     return "La contraseña debe contener al menos un número.";
   }
 
-  if (!tieneCaracterEspecial.test(password)) {
+  if (!tieneCaracterEspecial.test(cont)) {
     return "La contraseña debe contener al menos un carácter especial (ejemplo: !, @, #, etc.).";
   }
 
@@ -62,12 +71,6 @@ function validarContraseña(password) {
 }
 
 // Ejemplo de uso:
-console.log(validarContraseña("Password123!"));
-console.log(validarContraseña("pass"));
-console.log(validarContraseña("password123"));
-console.log(validarContraseña("Password123"));
-
-// Ejemplo de uso:
+registrar("usuario1", "Password123!");
+registrar("admin", "1234");
 registrar("usuario1", "1234");
-registrar("admin", "admin");
-registrar("usuario1", "5678");
