@@ -1,0 +1,25 @@
+Cliente:
+- Registro: Rediseñar registro porque no funciona, ni guarda en localstorage todavia
+- Login: P
+- Gestion de usuario: P
+- Gestión de cat: P
+- Gestion de preguntas: P
+- Gestion Examenes: P
+- Gestion intentos: P
+- Validacion de formularios: P
+
+Interfaces:
+- Buenas prácticas: (?)
+- Estructura de las páginas: Index, inicio y registro DONE. FALTAN: - areas
+- Combinación de colores: DONE
+- Uso de unidades coherentes: Se intenta.
+- Diseño de páginas: login, registro DONE. 
+    FALTAN: gestion usuarios, categorias, preguntas, exámenes, intentos.
+- CSS avanzado:
+flexbox: DONE
+Iconos: revisar
+Sombras: Hay, pero meter más
+Fuentes: revisar
+Animaciones, transiciones o transformaciones: añadir(En areas preferiblemente)
+Filtros o mezclas: añadir
+Otros: modo oscuro o claro
